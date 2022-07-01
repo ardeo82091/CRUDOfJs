@@ -33,10 +33,10 @@ class Student {
         let semGradesArray=[]
        for(let i=0; i<this.semCgpaArray.length; i++)
         {
-            if (this.semCgpaArray[i]>=90 && this.semCgpaArray[i]<=100) semGradesArray[i]='A';
-            else if(this.semCgpaArray[i]>=75 && this.semCgpaArray[i]<90) semGradesArray[i]='B';
-            else if(this.semCgpaArray[i]>=60 && this.semCgpaArray[i]<75) semGradesArray[i]='C';
-            else if(this.semCgpaArray[i]>=45 && this.semCgpaArray[i]<60) semGradesArray[i]='D';
+            if (this.semCgpaArray[i]>=9 && this.semCgpaArray[i]<=10) semGradesArray[i]='A';
+            else if(this.semCgpaArray[i]>=7.5 && this.semCgpaArray[i]<9) semGradesArray[i]='B';
+            else if(this.semCgpaArray[i]>=6 && this.semCgpaArray[i]<7.5) semGradesArray[i]='C';
+            else if(this.semCgpaArray[i]>=4.5 && this.semCgpaArray[i]<6.0) semGradesArray[i]='D';
             else semGradesArray[i]='F';
         } 
         return semGradesArray;
@@ -61,10 +61,10 @@ class Student {
             sumOfCgpa+=this.semCgpaArray[i];
         }
         averageOfCgpa = sumOfCgpa/this.semCgpaArray.length;
-        if (averageOfCgpa>=90 && averageOfCgpa<=100) averageOfGrade='A';
-            else if(averageOfCgpa>=75 && averageOfCgpa<90) averageOfGrade='B';
-            else if(averageOfCgpa>=60 && averageOfCgpa<75) averageOfGrade='C';
-            else if(averageOfCgpa>=45 && averageOfCgpa<60) averageOfGrade='D';
+        if (averageOfCgpa>=9 && averageOfCgpa<=10) averageOfGrade='A';
+            else if(averageOfCgpa>=7.5 && averageOfCgpa<9) averageOfGrade='B';
+            else if(averageOfCgpa>=6 && averageOfCgpa<7.5) averageOfGrade='C';
+            else if(averageOfCgpa>=4.5 && averageOfCgpa<6) averageOfGrade='D';
             else averageOfGrade='F';
         return averageOfGrade;
     }
@@ -136,4 +136,4 @@ class Student {
         }
     }
 }
-const ankit = Student.createNewStudent("Ankit", "Raj", "17 November 2000", [50,30,40,50,80]  , 2000, 2012)
+const ankit = Student.createNewStudent("Ankit", "Raj", "17 November 2000", [5,9,8.4,8.9,10]  , 2000, 2012)
